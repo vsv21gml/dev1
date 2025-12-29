@@ -34,6 +34,15 @@ npm run start:dev
 npm run start:prod
 ```
 
+### 3. 환경 변수 설정
+`.env.example` 파일을 참고하여 필요한 환경 변수를 설정할 수 있습니다. 기본값은 다음과 같습니다.
+
+```
+PORT=3000
+DATABASE_PATH=database.sqlite
+NODE_ENV=development
+```
+
 ## API 엔드포인트
 
 ### Base URL
@@ -61,6 +70,9 @@ http://localhost:3000/api
 
 ```
 src/
+├── env/
+│   ├── env.module.ts
+│   └── env.service.ts
 ├── project/
 │   ├── dto/
 │   │   ├── create-project.dto.ts
